@@ -1,0 +1,195 @@
+.titulo-principal{
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    border-bottom: 3px solid rgb(123, 193, 250);
+    border-top: 3px solid rgb(123, 193, 250);
+    text-shadow: 1px 1px 8px black;
+}
+body{
+    background-color: #daf4f8;
+    background-image: linear-gradient(#e2f7fa, #9bd6bf94);
+    background-repeat: no-repeat;
+    padding-top: 70px;
+    height: auto;
+    line-height: 1.6;
+    width: 100%;
+}
+
+#main{
+border-left: 1px solid white;    
+box-shadow: 4px 2px 8px black;  
+width: 90%;
+margin: auto;
+}
+main p{
+    font-size: 20px;
+    text-indent: 50px;
+    text-align: justify;
+    
+}
+
+h4, h2{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#icon{
+    margin-top: 10px;
+}
+.barra li{
+    border-right: 1px solid white;
+}
+.foto{
+    width: auto;
+}
+figure h3{
+    text-align: initial;
+    font-size: -webkit-xxx-large;
+    text-shadow: 3px 3px 8px black;
+}
+figure p{
+    text-align: initial;
+    font-size: large;
+}
+div.fundo {
+    position: relative;
+    border: 3px solid rgb(123, 193, 250);
+    background-color: white;
+}
+.fundo-img{
+    width: 100%;
+    height: 100%;
+}
+
+.fundo figure figcaption{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: xx-large;
+    color: black;
+    text-align: center;
+    text-shadow: 5px 5px 8px black;
+    
+}
+div.fundo:hover figcaption{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    height: 100%;
+    width: 100%;
+
+}
+
+footer{
+    padding: 15px;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+@media(min-width: 375px){
+    .bannerMove h3{
+        text-align: start;
+        font-size: 15px;
+    }
+    .bannerMove p{
+        text-align: end;
+        font-size: 13px;
+    }
+    .titulo-principal{
+        font-size: 30px;
+    }
+    div.fundo figcaption{
+        font-size: 30px;
+    }
+    #main{
+        text-align: center;
+    }
+}
+
+@media(min-width: 425px){
+    .bannerMove h3{
+        text-align:start ;
+        font-size: 19px;
+    }
+    .bannerMove p{
+        text-align: right;
+        font-size: 16px;
+    }
+    .titulo-principal{
+        font-size: 35px;
+    }
+    div.fundo figcaption{
+        font-size: 35px;
+    }
+    #main{
+        text-align: center;
+    }
+}
+
+@media(min-width: 768px){
+    .bannerMove h3{
+        text-align:center ;
+        font-size: 39px;
+        margin:0;
+    }
+    .bannerMove p{
+        margin:0;
+        text-align: center;
+        font-size: 30px;
+    }
+    .titulo-principal{
+        font-size: 50px;      
+    }
+    div.fundo figcaption{
+        font-size: 55px;
+    }
+    #main{
+        text-align: center;
+        width: 95%;
+    }
+    .barra li{
+        font-size: 13px;
+    }
+    #main p{
+        font-size: 25px;
+
+    }
+}
+@media(min-width: 992px){
+    .bannerMove h3{
+        text-align:center ;
+        font-size: 60px;
+        margin:0;
+    }
+    .bannerMove p{
+        margin:0;
+        text-align: center;
+        font-size: 45px;
+    }
+    .titulo-principal{
+        font-size: 55px;
+    }
+    div.fundo figcaption{
+        font-size: 38px;
+    }
+    #main{
+        text-align: center;
+        width: 95%;
+    }
+    .barra li{
+        font-size: 17px;
+    }
+    #main p{
+        font-size: 25px;
+
+    }
+}
+@media(min-width: 1400px){
+
+    div.fundo figcaption{
+        font-size: 50px;
+    }
+}
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Projeto Salva-Vidas</title>
+    <link rel="icon" href="img/saude.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/principal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <section class="container-fluid">
+            <nav class="barra navbar navbar-default navbar-fixed-top navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#collapse-navbar" aria-expanded="false">
+                            <span class="navbar-toggle-icon"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="index.html"><img alt="Brand" id="icon" src="img/saude24.png" alt="logo do projeto" ></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="collapse-navbar">
+                        <ul class="nav navbar-nav ">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="cadastro_paciente.html">Cadastro de Pacientes</a></li>
+                            <li><a href="cadastro_colaboradores.html">Cadastro para empresas e autônomos</a></li>
+                            <li><a href="pre_requisitos.html">Pré-requisitos</a></li>   
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <section class="container">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class=" carousel-inner" role="listbox">
+                    <figure class="item active bannerMove">
+                        <img src="img/banner2.png" class="img-responsive foto" alt="banner 1">
+                        <div class="carousel-caption">
+                            <h3>Projeto Salva-Vidas</h3>
+                            <p>Conciliando saúde e tecnologia.</p>
+                        </div>
+                    </figure>
+
+                    <figure class="item bannerMove"><a href="https://coronavirus.saude.gov.br/" target="_blank">
+                            <img src="img/banner1.png" class="img-responsive foto" alt="banner 2 sobre covid-19">
+                            <div class="carousel-caption">
+                                <h3>COVID-19</h3>
+                                <p>Clique para saber sobre dicas de prevenção</p>
+                            </div>
+                        </a>
+                    </figure>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+        <h1 class="titulo-principal">Projeto Salva-Vidas</h1>
+
+        <section class="container-fluid row" id="main">
+
+            <div class="fundo col-md-4 col-lg-4 container">
+                <figure>
+                    <a href="cadastro_paciente.html">
+                        <img src="img/fundo.jpg" class="fundo-img img-thumbnail" alt="area do paciente">
+                        <figcaption>Paciente, faça seu cadastro aqui</figcaption>
+                    </a>
+                </figure>
+            </div>
+
+            <div class="col-md-8 col-lg-8 container">
+                <h2>O que é o Projeto Salva-Vidas?</h2>
+                <p>Olá! Me chamo Herlisson Jordane Moreira. Sou o autor e criador desse projeto.
+                    Em meio a todas as dificuldades que estamos passando com o COVID-19,
+                    esse projeto foi criado com o intuito de evitar a exposição de pessoas de
+                    grupos de risco (portadoras de doenças crônicas, pessoas de idade avançada, gestantes
+                    ou que tenham imunidade baixa)que necessitem de medicamentos fornecidos pelo governo
+                    de ficarem em filas das farmácias populares e correrem o risco de serem contaminadas
+                    com esse novo virús que têm feito muitas tragédias mundo afora.
+                </p>
+
+                <h2 id="como">Como Funciona</h2>
+                <p>O funcionamento é bem simples: O paciente fará um cadastro, preenchendo seus
+                    dados de forma simples, colocando os documentos pedidos e postará a foto da receita
+                    e nome do medicamento requerido. Esse cadastro será vizualidado pelos profissionais responsáveis
+                    que acionarão umas das empresas de trasporte rápido cadastrada para entregarem seu
+                    medicamento em sua residência. Todos os transportadores serão previamente cadastrados
+                    e treinados para saberem como transportar seus medicamentos com segurança, sem expor o paciente
+                    ao novo vírus.</p>
+                <p>O paciente será avisado sobre as taxas de entrega por telefone, antes da entrega sair do seu
+                    destino inicial, para que não haja surpresas na hora da entrega. </p>
+
+                <h2>Objetivo do projeto</h2>
+                <p>Esse projeto tem como objetivo salvar vidas de pessoas que dependem de medicamentos do programa
+                    Farmácia Popular do Governo Federal e estão em grupo de risco, como por exemplo,
+                    diabéticos, pessoas que sofram com Doença de Parkinson, transplantados, que precisam
+                    tomar imunossupressores, gestantes e entre vários outros de baixa renda que dependem
+                    das chamadas farmacinhas para adquirir seus remédios.</p>
+
+                <p>A ideia surgiu diante das dificuldades encontradas por pacientes que dependem
+                    de buscar esses medicamentos. Em alguns casos, contratam serviços de terceiros,
+                    moto-taxi por exemplo, que precisam ir até a casa dos pacientes, buscar seus
+                    documentos, se dirigir ao ponto de distribuição de medicamentos e mesmo assim,
+                    nem sempre conseguem pegar os remédios por não ser a pessoa titular dos documentos.
+                    Em outros casos, algumas pessoas até possuem a procuração para que filhos
+                    ou demais parentes se tornem representantes do mesmo para retirar os medicamentos </p>
+            </div>
+
+        </section>
+    </main>
+
+
+</body>
+
+
+<footer>
+    &copy;Herlisson Jordane - Projeto Salva-Vidas
+</footer>
+
+<script src="bootstrap/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/navbar-animation.js"></script>
+
+</html>

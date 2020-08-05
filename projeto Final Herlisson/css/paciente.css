@@ -1,0 +1,63 @@
+#body{
+    border-left: 1px solid white;    
+    box-shadow: 4px 2px 8px black;  
+    width: 50%;
+    margin: auto;
+}
+
+form{
+    width: 50%;
+    margin-left: 25%;
+}
+fieldset{
+    border: 3px solid rgb(123, 193, 250);
+    background:#eeeeee;
+    padding: 20px;
+    font-size: 20px;
+}
+label{
+
+    display: inline-block;
+    width: 200px;
+}
+
+@media(min-width:360px){
+    #body{
+        width: 100%;
+    }
+    form{
+        width: auto;
+        margin-left: 0;
+    }
+
+}
+@media(min-width:768px){
+    #body{
+        width: 100%;
+    }
+    form{
+        width: 90%;
+        margin: auto;
+    }
+
+}
+@media(min-width:1024px){
+    #body{
+        width: 70%;
+    }
+    form{
+        width: 50%;
+        margin: auto;
+    }
+}
+#main-requisitos{
+    border-left: 1px solid white;    
+    box-shadow: 4px 2px 8px black;  
+    width: 70%;
+    margin: auto;
+
+}
+#resposta{
+    height: auto;
+    background-color: #e2f7fa;
+}

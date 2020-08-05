@@ -1,0 +1,26 @@
+
+.requisitos li{
+    font-size: 20px;
+    text-indent: 50px;
+    text-align: justify;
+}
+@media(min-width:1024px){
+    #body{
+        width: 70%;
+    }
+    form{
+        width: 50%;
+        margin: auto;
+    }
+}
+#main-requisitos{
+    border-left: 1px solid white;    
+    box-shadow: 4px 2px 8px black;  
+    width: 70%;
+    margin: auto;
+
+}
+#resposta{
+    height: auto;
+    background-color: #e2f7fa;
+}

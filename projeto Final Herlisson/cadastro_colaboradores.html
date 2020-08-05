@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro de Empresas</title>
+    <link rel="icon" href="img/saude.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/paciente.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <h1 class="titulo-principal">Cadastro de Empresas</h1>
+    <main>
+
+
+        <header>
+            <nav class="barra navbar navbar-default navbar-fixed-top navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#collapse-navbar" aria-expanded="false">
+                            <span class="navbar-toggle-icon"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="index.html"><img alt="Brand" id="icon" src="img/saude24.png" alt="logo do projeto"></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="collapse-navbar">
+                        <ul class="nav navbar-nav ">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="cadastro_paciente.html">Cadastro de Pacientes</a></li>
+                            <li><a href="cadastro_colaboradores.html">Cadastro para empresas e autônomos</a></li>
+                            <li><a href="pre_requisitos.html">Pré-requisitos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+
+        <section id="body" class="container">
+            <p>Essa área é destinada somente para empresas e autônomos que irão fazer as entregas
+                dos medicamentos para os pacientes. Se tiver interesse, leia nossos
+                <a href="pre_requisitos.html" target="_blank">pré-requisitos</a> para ser um colaborador.</p>
+
+            <form name="formulario" method="post" action="resposta.html" autocomplete="on">
+
+
+                <fieldset>
+                    <legend>Dados da Empresa</legend>
+
+                    <div class="form-group">
+                        <label for="nome">Razão Social</label>
+                        <div class="input-group">
+                            <input type="text" id="razaoSocial" name="razaoSocial" class="form-control" autofocus />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Nome Fantasia:</label>
+                        <div class="input-group">
+                            <input type="text" id="fantasia" name="fantasia" class="form-control" />
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="cpf">E-mail:</label>
+                        <div class="input-group">
+                            <input type="email" id="email" name="email" class="form-control" />
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="celular">CNPJ:</label>
+                        <div class="input-group">
+                            <input type="text" id="cnpj" name="cnpj" class="form-control" onkeypress="$(this).mask('00.000.000/0000-00')" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telfixo">Telefone Fixo:</label>
+                        <div class="input-group">
+                            <input type="tel" id="telfixo" name="telFixo" class="form-control"
+                                onkeypress="$(this).mask('(00) 0000-0000')" placeholder="Digite o DDD mais o número" />
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <div class="form-group">
+                        <label for="cpf">Estado:</label>
+                        <div class="input-group">
+                            <input type="text" id="estado" name="estado" class="form-control" />
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="cidade">Cidade:</label>
+                        <div class="input-group">
+                            <input type="text" id="cidade" name="cidade" class="form-control" />
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="rua">Rua:</label>
+                        <div class="input-group">
+                            <input type="text" id="rua" name="rua" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="numero">Numero:</label>
+                        <div class="input-group">
+                            <input type="text" id="numero" name="numero" class="form-control" />
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="cep">CEP:</label>
+                        <div class="input-group">
+                            <input type="text" id="cep" name="cep" class="form-control"
+                                onkeypress="$(this).mask('00.000-000')" placeholder="somente números" />
+                        </div>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary" onclick="return validaDados()">Enviar</button>
+
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+</body>
+<footer>
+    &copy;Herlisson Jordane - Projeto Salva-Vidas
+
+</footer>
+
+<script src="bootstrap/jquery.js"></script>
+<script src="bootstrap/jquery.mask.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/navbar-animation.js"></script>
+<script src="javascript/valida-empresa.js"></script>
+
+
+</html>
